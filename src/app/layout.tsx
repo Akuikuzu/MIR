@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+// @ts-ignore
+import Navbar from "@/Components/NavBar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,11 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col __bm__extension">{children}</body>
+    <html lang="en" className={`h-full antialiased`}>
+      <body className="min-h-full flex flex-col __bm__extension">
+        <Navbar/>
+        {children}
+        </body>
     </html>
   );
 }

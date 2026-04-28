@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@layer components {
+  .bg-brown {
+    background-color: #110b07;
+  }
+}
