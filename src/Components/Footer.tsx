@@ -3,7 +3,7 @@ import Image from "next/image"
 
 function Footer() {
   return (
-    <div className="w-full absolute grid h-auto bottom-0 bg-black text-white text-center p-3 justify-center">
+    <div className="w-full grid h-auto bottom-0 bg-black text-white text-center p-3 justify-center">
         <h1 className="text-6xl text-red-600 font-bold uppercase tracking-wider p-2">Musik I Rønde</h1>
         <div className="flex border-b-2 w-lg justify-center p-2 pb-5">
             <div className="border-r-2 p-4 text-left">
@@ -33,7 +33,32 @@ function Footer() {
             </div>
         </div>
         <h1 className="text-4xl text-red-600 font-bold uppercase tracking-wider p-4">Sponsorer</h1>
-        
+        <div className="flex w-lg justify-center p-2 pb-5">
+                    <Image
+                        src={"/image 1.png"}
+                        alt="Picture of the author"
+                        width={200}
+                        height={200}
+                        className="block p-2"
+                        loading="eager"
+                    />
+                    <Image
+                        src={"/image 3.png"}
+                        alt="Picture of the author"
+                        width={200}
+                        height={200}
+                        className="block p-2"
+                        loading="eager"
+                    />
+                    <Image
+                        src={"/image 4.png"}
+                        alt="Picture of the author"
+                        width={170}
+                        height={200}
+                        className="block p-2"
+                        loading="eager"
+                    />
+        </div>
         <p>© 2004–2026 Musik i Rønde · Alle rettigheder forbeholdes</p>
     </div>
   )

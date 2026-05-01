@@ -19,7 +19,7 @@ const Navbar = () => {
                 <li className="pl-10 pr-10 text-4xs uppercase">Kontakt</li>
                 <li className="pl-10 pr-10 text-4xs uppercase">Info</li>
             </ul>
-            <button className="button-bg butt-text-col p-3 rounded-lg button-shadow">
+            <button className="bg-red-600 p-3 rounded-lg button-shadow">
                 Køb Billeter
             </button>
         </nav>
