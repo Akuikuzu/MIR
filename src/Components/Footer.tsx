@@ -5,8 +5,8 @@ function Footer() {
   return (
     <div className="w-full grid h-auto bottom-0 bg-black text-white text-center p-3 justify-center">
         <h1 className="text-6xl text-red-600 font-bold uppercase tracking-wider p-2">Musik I Rønde</h1>
-        <div className="flex border-b-2 w-lg justify-center p-2 pb-5">
-            <div className="border-r-2 p-4 text-left">
+        <div className="flex w-full max-w-5xl border-b-2 justify-center p-2 pb-5">
+            <div className="flex-1 basis-0 border-r-2 p-4 pl-6 text-left">
                 <p className="font-bold pb-5 pr-6">Navigation</p>
                 <p className="">Events</p>
                 <p className="">Bliv medlem</p>
@@ -16,28 +16,28 @@ function Footer() {
                 <p className="">Galleri</p>
                 <p className="">Billetter</p>
             </div>
-            <div className="border-r-2 p-4 text-left">
+            <div className="flex-1 bassis-0 border-r-2 p-4 text-left">
                 <p className="font-bold pb-5 pr-6">Følg Med</p>
-                <p className="">Events</p>
-                <p className="">Bliv medlem</p>
+                <p className="">Følg os på sociale medier:</p>
+                <p className="">media logos</p>
             </div>
-            <div className="p-4 text-left">
+            <div className="flex-1 basis-0 p-4 text-left">
                 <p className="font-bold pb-5 pr-6">Kontakt</p>
-                <p className="">Events</p>
-                <p className="">Bliv medlem</p>
-                <p className="">Om Os</p>
-                <p className="">Kontakt</p>
-                <p className="">Info</p>
-                <p className="">Galleri</p>
-                <p className="">Billetter</p>
+                <p className="">Kulturhotellet</p>
+                <p className="">Hovedgaden 10</p>
+                <p className="">8410 Rønde</p>
+                <p className="">info@musikiroende.dk</p>
+                <p className="">CVR: 27590969</p>
+                <p className="">Lokalebooking:</p>
+                <p className="">Steen: steen.roende@gmail.com</p>
             </div>
         </div>
-        <h1 className="text-4xl text-red-600 font-bold uppercase tracking-wider p-4">Sponsorer</h1>
-        <div className="flex w-lg justify-center p-2 pb-5">
+        <h1 className="text-4xl text-red-600 font-bold uppercase tracking-wider p-4 text-center">Sponsorer</h1>
+        <div className="flex items-center justify-center p-2 pb-5">
                     <Image
                         src={"/image 1.png"}
                         alt="Picture of the author"
-                        width={200}
+                        width={300}
                         height={200}
                         className="block p-2"
                         loading="eager"
@@ -45,7 +45,7 @@ function Footer() {
                     <Image
                         src={"/image 3.png"}
                         alt="Picture of the author"
-                        width={200}
+                        width={300}
                         height={200}
                         className="block p-2"
                         loading="eager"
@@ -53,7 +53,7 @@ function Footer() {
                     <Image
                         src={"/image 4.png"}
                         alt="Picture of the author"
-                        width={170}
+                        width={200}
                         height={200}
                         className="block p-2"
                         loading="eager"

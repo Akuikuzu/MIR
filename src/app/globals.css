@@ -13,4 +13,10 @@
   .button-shadow:hover{
     box-shadow: 0 0 40px -6px #EDBD7C;
   }
+  .gallery-bg{
+    background-color: #141413;
+  }
+  .gallery-text{
+    color: #634520;
+  }
 }
