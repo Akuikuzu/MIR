@@ -4,7 +4,7 @@ import Image from "next/image"
 function Footer() {
   return (
     <div className="w-full grid h-auto bottom-0 bg-black text-white text-center p-3 justify-center">
-        <h1 className="text-6xl text-red-600 font-bold uppercase tracking-wider p-2">Musik I Rønde</h1>
+        <h1 className="text-6xl butt-text-col font-bold uppercase tracking-wider p-2">Musik I Rønde</h1>
         <div className="flex w-full max-w-5xl border-b-2 justify-center p-2 pb-5">
             <div className="flex-1 basis-0 border-r-2 p-4 pl-6 text-left">
                 <p className="font-bold pb-5 pr-6">Navigation</p>
@@ -28,11 +28,9 @@ function Footer() {
                 <p className="">8410 Rønde</p>
                 <p className="">info@musikiroende.dk</p>
                 <p className="">CVR: 27590969</p>
-                <p className="">Lokalebooking:</p>
-                <p className="">Steen: steen.roende@gmail.com</p>
             </div>
         </div>
-        <h1 className="text-4xl text-red-600 font-bold uppercase tracking-wider p-4 text-center">Sponsorer</h1>
+        <h1 className="text-4xl butt-text-col font-bold uppercase tracking-wider p-4 text-center">Sponsorer</h1>
         <div className="flex items-center justify-center p-2 pb-5">
                     <Image
                         src={"/image 1.png"}
@@ -46,14 +44,6 @@ function Footer() {
                         src={"/image 3.png"}
                         alt="Picture of the author"
                         width={300}
-                        height={200}
-                        className="block p-2"
-                        loading="eager"
-                    />
-                    <Image
-                        src={"/image 4.png"}
-                        alt="Picture of the author"
-                        width={200}
                         height={200}
                         className="block p-2"
                         loading="eager"
