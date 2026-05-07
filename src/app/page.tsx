@@ -70,37 +70,96 @@ export default function Home() {
       </section>
       <section className="w-full grid h-auto bottom-0 text-white text-center p-3 justify-center">
       <div className="flex w-full max-w-5xl overflow-hidden gap-2 list-none justify-center p-2 pb-5">
-        <li className="flex-1 basis-0 p-4 pl-6 text-left"> <p>Diving Ducks</p>
-          <div className="bg-gray-600 p-3 mt-3 border rounded-lg">
-            card
+        <li className="flex-1 basis-0 p-4 text-left"> <p className="bg-amber-600 p-4 ">Diving Ducks</p>
+          <div className="bg-gray-600 mt-3 border rounded-lg">
+            <Image
+            src="/group35.jpg" // put your image in public/hero.jpg
+            alt="Live music performance"
+            width={700}
+            height={700}
+            className="object-cover object-center rounded-lg border-b-2 border-gray-400"
+            />
+            <div className="p-3">
+            <p className="uppercase text-3xl font-bold mb-3">title</p>
+            <p>dato</p>
+            <p>genre</p>
+            <button className="button-transparent-bg butt-text-col border-2 p-2 ml-7 mt-4 rounded-lg button-shadow">
+                læs mere
+            </button>
+            <button className="butt-text-col button-bg p-3 rounded-lg ml-7 button-shadow">
+                Køb Billeter
+            </button>
+            </div>
           </div>
         </li>
-        <li className="flex-1 bassis-0 p-4 text-left"> <p>Diving Ducks</p>
+        <li className="flex-1 bassis-0 p-4 text-left"> <p className="bg-amber-800 p-4">Diving Ducks</p>
           <div className="bg-gray-600 p-0 mt-3 border rounded-lg">
             <Image
             src="/group35.jpg" // put your image in public/hero.jpg
             alt="Live music performance"
             width={700}
             height={700}
-            className="object-cover object-center"
+            className="object-cover object-center rounded-lg border-b-2 border-gray-400"
             />
-            <p>title</p>
+            <div className="p-3">
+            <p className="uppercase text-3xl font-bold mb-3">title</p>
             <p>dato</p>
             <p>genre</p>
-            <button className="bg-transparent butt-text-col border-2 p-2 rounded-lg button-shadow">
+            <button className="button-transparent-bg butt-text-col border-2 p-2 ml-7 mt-4 rounded-lg button-shadow">
                 læs mere
             </button>
-            <button className="butt-text-col button-bg p-3 rounded-lg button-shadow">
+            <button className="butt-text-col button-bg p-3 rounded-lg ml-7 button-shadow">
                 Køb Billeter
             </button>
+            </div>
           </div>
         </li>
-        <li className="flex-1 basis-0 p-4 text-left"> <p>Diving Ducks</p>
-          <div className="bg-gray-600 p-3 mt-3 border rounded-lg">
-            card
+        <li className="flex-1 basis-0 p-4 text-left"> <p className="bg-amber-800 p-4">Diving Ducks</p>
+          <div className="bg-gray-600 mt-3 border rounded-lg">
+            <Image
+            src="/group35.jpg" // put your image in public/hero.jpg
+            alt="Live music performance"
+            width={700}
+            height={700}
+            className="object-cover object-center rounded-lg border-b-2 border-gray-400"
+            />
+            <div className="p-3">
+            <p className="uppercase text-3xl font-bold mb-3">title</p>
+            <p>dato</p>
+            <p>genre</p>
+            <button className="button-transparent-bg butt-text-col border-2 p-2 ml-7 mt-4 rounded-lg button-shadow">
+                læs mere
+            </button>
+            <button className="butt-text-col button-bg p-3 rounded-lg ml-7 button-shadow">
+                Køb Billeter
+            </button>
+            </div>
           </div>
         </li>
       </div>
+      <div>
+      <button className="text-2xl border-2 rounded-lg m-2 p-3">Se mere</button>
+      </div>
+      </section>
+      <section className="flex gap-6 mb-12">
+        <div className="flex-shrink-0 w-12 flex items-center">
+          <div className="bg-amber-800 text-white font-bold py-3 px-2 vertical-rl">
+            2025
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex-1">
+          <div className="bg-gray-600 mt-3 border rounded-lg text-center">
+            <Image
+            src="/group35.jpg" // put your image in public/hero.jpg
+            alt="Live music performance"
+            width={500}
+            height={500}
+            className="object-cover object-center rounded-lg border-b-2 border-gray-400"
+            />
+            <p className="uppercase text-3xl font-bold mb-3">title</p>
+            <p>dato</p>
+          </div>
+        </div>
       </section>
     </main>
   );

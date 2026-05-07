@@ -19,4 +19,11 @@
   .gallery-text{
     color: #634520;
   }
+  .button-transparent-bg{
+    background-color: #3a32278e;
+  }
+  .vertical-rl {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+  }
 }
