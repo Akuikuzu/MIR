@@ -23,7 +23,8 @@
     background-color: #3a32278e;
   }
   .vertical-rl {
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
+  writing-mode: vertical-rl;       /* try vertical-rl for left-side labels */
+  text-orientation: upright;      /* keeps glyphs upright, not rotated */
+  padding: 6px 10px;
   }
 }

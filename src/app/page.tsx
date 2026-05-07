@@ -141,13 +141,37 @@ export default function Home() {
       <button className="text-2xl border-2 rounded-lg m-2 p-3">Se mere</button>
       </div>
       </section>
-      <section className="flex gap-6 mb-12">
-        <div className="flex-shrink-0 w-12 flex items-center">
-          <div className="bg-amber-800 text-white font-bold py-3 px-2 vertical-rl">
+      <section className="flex gap-6 mb-12 justify-center">
+        <div className="shrink-0 flex items-center">
+          <div className="bg-amber-800 text-white font-bold py-4 m-3 vertical-rl">
             2025
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 flex-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="mt-3 rounded-lg text-center">
+            <Image
+            src="/group35.jpg" // put your image in public/hero.jpg
+            alt="Live music performance"
+            width={500}
+            height={500}
+            className="object-cover object-center rounded-lg absolute"
+            />
+            <div className="relative shadow-black shadow-">
+            <p className="uppercase text-3xl font-bold mb-3">title</p>
+            <p>dato</p>
+            </div>
+          </div>
+          <div className="bg-gray-600 mt-3 border rounded-lg text-center">
+            <Image
+            src="/group35.jpg" // put your image in public/hero.jpg
+            alt="Live music performance"
+            width={500}
+            height={500}
+            className="object-cover object-center rounded-lg border-b-2 border-gray-400"
+            />
+            <p className="uppercase text-3xl font-bold mb-3">title</p>
+            <p>dato</p>
+          </div>
           <div className="bg-gray-600 mt-3 border rounded-lg text-center">
             <Image
             src="/group35.jpg" // put your image in public/hero.jpg
