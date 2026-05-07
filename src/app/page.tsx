@@ -57,7 +57,7 @@ export default function Home() {
           className="object-cover object-center"
         />
         <Image
-          src="/group 40.jpg" // put your image in public/hero.jpg
+          src="/group40.jpg" // put your image in public/hero.jpg
           alt="Live music performance"
           width={300}
           height={300}
