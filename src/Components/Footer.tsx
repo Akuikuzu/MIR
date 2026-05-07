@@ -33,7 +33,7 @@ function Footer() {
         <h1 className="text-4xl butt-text-col font-bold uppercase tracking-wider p-4 text-center">Sponsorer</h1>
         <div className="flex items-center justify-center p-2 pb-5">
                     <Image
-                        src={"/image 1.png"}
+                        src={"/image1.png"}
                         alt="Picture of the author"
                         width={300}
                         height={200}
@@ -41,7 +41,7 @@ function Footer() {
                         loading="eager"
                     />
                     <Image
-                        src={"/image 3.png"}
+                        src={"/image3.png"}
                         alt="Picture of the author"
                         width={300}
                         height={200}

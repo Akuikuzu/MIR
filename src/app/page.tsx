@@ -29,28 +29,28 @@ export default function Home() {
       </section>
       <section className="relative w-full overflow-hidden flex gap-2">
         <Image
-          src="/group 35.jpg" // put your image in public/hero.jpg
+          src="/group35.jpg" // put your image in public/hero.jpg
           alt="Live music performance"
           width={300}
           height={300}
           className="object-cover object-center"
         />
         <Image
-          src="/group 36.jpg" // put your image in public/hero.jpg
+          src="/group36.jpg" // put your image in public/hero.jpg
           alt="Live music performance"
           width={300}
           height={300}
           className="object-cover object-center"
         />
         <Image
-          src="/group 37.jpg" // put your image in public/hero.jpg
+          src="/group37.jpg" // put your image in public/hero.jpg
           alt="Live music performance"
           width={300}
           height={300}
           className="object-cover object-center"
         />
         <Image
-          src="/group 38.jpg" // put your image in public/hero.jpg
+          src="/group38.jpg" // put your image in public/hero.jpg
           alt="Live music performance"
           width={300}
           height={300}
@@ -78,7 +78,7 @@ export default function Home() {
         <li className="flex-1 bassis-0 p-4 text-left"> <p>Diving Ducks</p>
           <div className="bg-gray-600 p-0 mt-3 border rounded-lg">
             <Image
-            src="/group 35.jpg" // put your image in public/hero.jpg
+            src="/group35.jpg" // put your image in public/hero.jpg
             alt="Live music performance"
             width={700}
             height={700}
