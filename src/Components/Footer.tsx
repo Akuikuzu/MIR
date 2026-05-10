@@ -36,7 +36,7 @@ function Footer() {
                         src={"/image1.png"}
                         alt="Picture of the author"
                         width={300}
-                        height={200}
+                        height={300}
                         className="block p-2"
                         loading="eager"
                     />
@@ -44,7 +44,7 @@ function Footer() {
                         src={"/image3.png"}
                         alt="Picture of the author"
                         width={300}
-                        height={200}
+                        height={300}
                         className="block p-2"
                         loading="eager"
                     />
