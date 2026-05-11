@@ -1,32 +1,10 @@
 import Image from "next/image";
+import Header from "@/Components/Header";
 
 export default function Home() {
   return (
     <main className="w-full flex-1 bg-brown text-white">
-      <section className="relative w-full min-h-[70vh] sm:min-h-[80vh] overflow-hidden">
-        <Image
-          src="/hero.jpg" // put your image in public/hero.jpg
-          alt="Live music performance"
-          fill
-          priority
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black/45" />
-
-        <div className="absolute inset-0 flex items-center">
-          <div className="mx-auto w-full max-w-7xl px-6 sm:px-10">
-            <h1 className="max-w-xl text-4xl sm:text-6xl font-bold leading-tight text-white">
-              Musik i Rønde
-            </h1>
-            <p className="mt-4 max-w-md text-base sm:text-xl text-white/90">
-              En lokal scene for store oplevelser - live koncerter året rundt.
-            </p>
-            <button className="mt-8 button-bg butt-text-col px-6 py-3 rounded-md button-shadow font-semibold">
-              SE MERE
-            </button>
-          </div>
-        </div>
-      </section>
+      <Header />
       <section className="relative w-full overflow-hidden flex gap-2">
         <Image
           src="/group35.jpg" // put your image in public/hero.jpg
@@ -152,8 +130,8 @@ export default function Home() {
             <Image
               src="/group35.jpg" // put your image in public/hero.jpg
               alt="Live music performance"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className="object-cover object-center rounded-lg"
             />
             <div className="absolute inset-4">
@@ -167,8 +145,8 @@ export default function Home() {
             <Image
               src="/group37.jpg" // put your image in public/hero.jpg
               alt="Live music performance"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className="object-cover object-center rounded-lg"
             />
             <div className="absolute inset-4">
@@ -182,8 +160,8 @@ export default function Home() {
             <Image
               src="/group36.jpg" // put your image in public/hero.jpg
               alt="Live music performance"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               className="object-cover object-center rounded-lg"
             />
             <div className="absolute inset-4">
@@ -207,8 +185,8 @@ export default function Home() {
               <Image
                 src="/group35.jpg" // put your image in public/hero.jpg
                 alt="Live music performance"
-                width={500}
-                height={500}
+                width={400}
+                height={400}
                 className="object-cover object-center rounded-lg"
               />
               <div className="absolute inset-4">
@@ -222,8 +200,8 @@ export default function Home() {
               <Image
                 src="/group37.jpg" // put your image in public/hero.jpg
                 alt="Live music performance"
-                width={500}
-                height={500}
+                width={400}
+                height={400}
                 className="object-cover object-center rounded-lg"
               />
               <div className="absolute inset-4">
@@ -237,8 +215,8 @@ export default function Home() {
               <Image
                 src="/group36.jpg" // put your image in public/hero.jpg
                 alt="Live music performance"
-                width={500}
-                height={500}
+                width={400}
+                height={400}
                 className="object-cover object-center rounded-lg"
               />
               <div className="absolute inset-4">
