@@ -74,7 +74,7 @@ const HistorikGal = () => {
                                 height={400}
                                 className="object-cover object-center rounded-lg"
                             />
-                            <div className="absolute inset-0">
+                            <div className="absolute inset-4">
                                 <div className="bg-black/60 px-9 py-9 rounded-lg drop-shadow-2xl">
                                     <p className="uppercase text-3xl font-bold mb-3">title</p>
                                     <p>dato</p>
