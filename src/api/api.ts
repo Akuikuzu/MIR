@@ -1,7 +1,7 @@
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export async function getEvents() {
-  const res = await fetch(`${API_URL}/events`, {
+  const res = await fetch(`${API_URL}/api/events`, {
     cache: "no-store",
   });
 
