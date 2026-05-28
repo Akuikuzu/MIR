@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { useQuery } from '@tanstack/react-query';
 import { getEvents } from '@/api/api';
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
 const ArtistCards = () => {
     const { data, isLoading } = useQuery({
         queryKey: ["mydata"],
@@ -23,33 +25,34 @@ const ArtistCards = () => {
     return (
         <section className="w-full text-white text-center p-3">
             <div className="flex flex-wrap justify-center gap-6">
-            {activeEvents.map((g: any) => (
-                <div className="w-full max-w-[420px] list-none" key={g.id}>
-                    <li className="basis-0 p-4 text-left"> <p className="bg-amber-600 p-4 ">Diving Ducks</p>
-                        <div className="bg-gray-600 mt-3 border rounded-lg">
-                            <Image
-                                src={g.image_url} // put your image in public/hero.jpg
-                                alt="Live music performance"
-                                width={700}
-                                height={700}
-                                className="object-cover object-center rounded-lg border-b-2 border-gray-400"
-                            />
-                            <div className="p-3">
-                                <p className="uppercase text-3xl font-bold mb-3">{g.title}</p>
-                                <p>{g.event_date}</p>
-                                <p>genre</p>
-                                <button className="button-transparent-bg butt-text-col border-2 p-2 ml-7 mt-4 rounded-lg button-shadow">
-                                    læs mere
-                                </button>
-                                <button className="butt-text-col button-bg p-3 rounded-lg ml-7 button-shadow">
-                                    <a href={g.ticket_url}>Køb Billeter</a>
-                                </button>
+                {activeEvents.map((g: any) => (
+                    <div className="w-full max-w-[420px] list-none" key={g.id}>
+                        <li className="basis-0 p-4 text-left"> <p className="bg-amber-600 p-4 ">{g.title}</p>
+                            <div className="bg-gray-600 mt-3 border rounded-lg">
+                                <Image
+                                    src={API_URL + g.image_url} // put your image in public/hero.jpg
+                                    alt="Live music performance"
+                                    width={700}
+                                    height={700}
+                                    className="object-cover object-center rounded-lg border-b-2 border-gray-400"
+                                />
+                                <div className="p-3">
+                                    <p className="uppercase text-3xl font-bold mb-3">{g.title}</p>
+                                    <p>{g.event_date}</p>
+                                    <p>genre</p>
+                                    <div className="mt-4 flex justify-center gap-4">
+                                        <button className="button-transparent-bg butt-text-col border-2 p-2 rounded-lg button-shadow">
+                                            læs mere
+                                        </button>
+                                        <a href={g.ticket_url} className="butt-text-col button-bg p-3 rounded-lg button-shadow">
+                                            Køb Billeter
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-
-                </div>
-            ))}
+                        </li>
+                    </div>
+                ))}
             </div>
 
             <div className='mt-6 flex justify-center'>
