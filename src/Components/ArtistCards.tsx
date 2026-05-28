@@ -13,6 +13,7 @@ const ArtistCards = () => {
         refetchOnWindowFocus: false,
     });
     console.log(Array.isArray(data), data)
+
     if (isLoading) return <p>Loading...</p>;
 
     const activeEvents = Object.values(data ?? {})
@@ -20,10 +21,11 @@ const ArtistCards = () => {
         .filter((event: any) => Number(event.is_active) === 1);
 
     return (
-        <section className="w-full grid h-auto bottom-0 text-white text-center p-3 justify-center">
+        <section className="w-full text-white text-center p-3">
+            <div className="flex flex-wrap justify-center gap-6">
             {activeEvents.map((g: any) => (
-                <div className="flex w-full max-w-5xl overflow-hidden gap-2 list-none justify-center p-2 pb-5" key={g.id}>
-                    <li className="flex-1 basis-0 p-4 text-left"> <p className="bg-amber-600 p-4 ">Diving Ducks</p>
+                <div className="w-full max-w-[420px] list-none" key={g.id}>
+                    <li className="basis-0 p-4 text-left"> <p className="bg-amber-600 p-4 ">Diving Ducks</p>
                         <div className="bg-gray-600 mt-3 border rounded-lg">
                             <Image
                                 src={g.image_url} // put your image in public/hero.jpg
@@ -40,7 +42,7 @@ const ArtistCards = () => {
                                     læs mere
                                 </button>
                                 <button className="butt-text-col button-bg p-3 rounded-lg ml-7 button-shadow">
-                                    Køb Billeter
+                                    <a href={g.ticket_url}>Køb Billeter</a>
                                 </button>
                             </div>
                         </div>
@@ -48,7 +50,9 @@ const ArtistCards = () => {
 
                 </div>
             ))}
-            <div>
+            </div>
+
+            <div className='mt-6 flex justify-center'>
                 <button className="text-2xl border-2 rounded-lg m-2 p-3">Se mere</button>
             </div>
         </section>
