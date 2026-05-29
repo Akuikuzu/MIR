@@ -16,7 +16,7 @@ const Galleri = () => {
   console.log(Array.isArray(data), data)
   const festivals = Array.isArray(data) ? data.slice(0, 5) : [];
   return (
-    <section className="relative w-full overflow-hidden flex gap-2">
+    <section className="relative w-full overflow-hidden gap-2 hidden md:flex">
       {festivals.map((h) => (
         <div className="relative w-sm aspect-[4/3] overflow-hidden rounded-lg" key={h.id}>
           <Image
