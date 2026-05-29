@@ -6,11 +6,12 @@ import { useState } from "react";
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const navItems = [
-        { label: "events", href: "/events" },
-        { label: "Bliv Medlem", href: "/bliv-medlem" },
+        { label: "arrangementer", href: "/events" },
         { label: "Om Os", href: "/om-os" },
-        { label: "Kontakt", href: "/kontakt" },
+        { label: "galleri", href: "/galleri" },
         { label: "Info", href: "/info" },
+        { label: "Kontakt", href: "/kontakt" },
+        
     ];
     return (
         <nav className="relative w-full bg-black">

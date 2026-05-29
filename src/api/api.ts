@@ -13,7 +13,7 @@ export async function getEvents() {
 }
 
 export async function getAbout() {
-  const res = await fetch(`${API_URL}/about`, {
+  const res = await fetch(`${API_URL}/api/about`, {
     cache: "no-store",
   });
 
@@ -25,7 +25,7 @@ export async function getAbout() {
 }
 
 export async function getGallery() {
-  const res = await fetch(`${API_URL}/gallery`, {
+  const res = await fetch(`${API_URL}/api/gallery`, {
     cache: "no-store",
   });
 
@@ -37,7 +37,7 @@ export async function getGallery() {
 }
 
 export async function getFestival() {
-  const res = await fetch(`${API_URL}/festival`, {
+  const res = await fetch(`${API_URL}/api/festival`, {
     cache: "no-store",
   });
 

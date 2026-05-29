@@ -2,7 +2,6 @@ import Image from "next/image";
 import Header from "@/Components/Header";
 import Galleri from "@/Components/GalleriForeside";
 import ArtistCards from "@/Components/ArtistCards";
-import HistorikGal from "@/Components/HistorikGal";
 import KulturCards from "@/Components/KulturCards";
 import { Metadata } from "next";
 
@@ -17,7 +16,6 @@ export default function Home() {
       <Header />
       <Galleri />
       <ArtistCards />
-      <HistorikGal />
       
       <KulturCards />
     </main>
