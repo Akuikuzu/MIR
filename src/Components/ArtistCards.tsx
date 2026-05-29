@@ -7,12 +7,35 @@ import { getEvents } from '@/api/api';
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const ArtistCards = () => {
+
     const { data, isLoading } = useQuery({
         queryKey: ["events"],
         queryFn: getEvents,
         refetchOnMount: false,
         refetchOnWindowFocus: false,
     });
+
+    console.log(Array.isArray(data), data)
+
+    // Helper: build a Date from event_date and/or start_time.
+    // - Accepts YYYY-MM-DD or full ISO date in event_date
+    // - Accepts HH:MM or full ISO in start_time
+    const formatTime = (startTime?: string) => {
+        if (!startTime) return '';
+
+        const timePart = startTime.slice(0, 5);
+        const [hh, mm] = timePart.split(':').map(Number);
+
+        if (Number.isNaN(hh) || Number.isNaN(mm)) return startTime;
+
+        const dt = new Date();
+        dt.setHours(hh, mm, 0, 0);
+
+        return dt.toLocaleTimeString('da-DK', {
+            hour: '2-digit',
+            minute: '2-digit',
+        });
+    };
 
     if (isLoading) return <p>Loading...</p>;
 
@@ -30,6 +53,8 @@ const ArtistCards = () => {
                         year: 'numeric',
                     });
 
+                    const formattedTime = formatTime(g.start_time);
+
                     return (
                         <div className="w-full max-w-[420px] list-none overflow-hidden" key={g.id}>
                             <li className="basis-0 p-4 text-left">
@@ -44,7 +69,7 @@ const ArtistCards = () => {
                                     </div>
                                     <div className="p-3">
                                         <p className="uppercase text-1xl font-bold mb-3">{g.title}</p>
-                                        <p className='mb-3'>{formattedDate}</p>
+                                        <p className='mb-3'>{formattedDate}{formattedTime ? ` · ${formattedTime}` : ''}</p>
                                         <p className='text-gray-400'>"{g.subtitle}"</p>
                                         <div className="mt-4 flex justify-center gap-4">
                                             <button className="button-transparent-bg butt-text-col border-2 p-2 rounded-lg button-shadow">
